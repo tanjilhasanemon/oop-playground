@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="350.0" prefWidth="379.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.oop.first.comboboxpractice.comboBoxController">
+   <children>
+      <Label layoutX="60.0" layoutY="73.0" text="Major:" />
+      <ComboBox fx:id="majorComboBox" layoutX="124.0" layoutY="69.0" prefWidth="150.0" />
+      <Button layoutX="124.0" layoutY="147.0" mnemonicParsing="false" onAction="#showmajorOnAction" prefHeight="26.0" prefWidth="150.0" text="Show major" />
+      <Label fx:id="showmajorLabel" layoutX="124.0" layoutY="212.0" prefHeight="74.0" prefWidth="150.0" style="-fx-border-color: Black;" />
+   </children>
+</AnchorPane>
