@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="452.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.oop.sectionsix.complexnooperation.ComplexNoController">
+   <children>
+      <Label layoutX="44.0" layoutY="71.0" prefHeight="38.0" prefWidth="288.0" text="Enter Real Value of 1st Complex Number" />
+      <Label layoutX="44.0" layoutY="109.0" prefHeight="38.0" prefWidth="288.0" text="Enter Img Value of 1st Complex Number" />
+      <Label layoutX="44.0" layoutY="179.0" prefHeight="38.0" prefWidth="288.0" text="Enter Real Value of 2nd Complex Number" />
+      <Label layoutX="44.0" layoutY="217.0" prefHeight="38.0" prefWidth="288.0" text="Enter Img Value of 2nd Complex Number" />
+      <TextField fx:id="realValueOf1stTextfield" layoutX="300.0" layoutY="78.0" />
+      <TextField fx:id="imgValueOf1stTextfield" layoutX="300.0" layoutY="116.0" />
+      <TextField fx:id="realValueOf2ndTextfield" layoutX="300.0" layoutY="188.0" />
+      <TextField fx:id="imgValueOf2ndTextfield" layoutX="300.0" layoutY="224.0" />
+      <Button layoutX="44.0" layoutY="298.0" mnemonicParsing="false" onAction="#addButtonOnAction" prefHeight="25.0" prefWidth="226.0" text="Add" />
+      <Button layoutX="300.0" layoutY="298.0" mnemonicParsing="false" onAction="#subButtonOnAction" prefHeight="25.0" prefWidth="226.0" text="Sub" />
+      <Label fx:id="resultLabel" layoutX="44.0" layoutY="369.0" prefHeight="62.0" prefWidth="483.0" textFill="#f51313">
+         <font>
+            <Font size="38.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+
+
+<AnchorPane prefHeight="713.0" prefWidth="740.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.oop.sectionone.studentmanagementsystem.StudentAddController">
+   <children>
+      <Label layoutX="34.0" layoutY="37.0" prefHeight="26.0" prefWidth="95.0" text="Id" />
+      <TextField fx:id="idTextfield" layoutX="129.0" layoutY="38.0" prefHeight="25.0" prefWidth="113.0" />
+      <Label layoutX="34.0" layoutY="71.0" prefHeight="26.0" prefWidth="95.0" text="Name" />
+      <TextField fx:id="nameTextfield" layoutX="129.0" layoutY="72.0" prefHeight="25.0" prefWidth="113.0" />
+      <Label layoutX="266.0" layoutY="37.0" prefHeight="26.0" prefWidth="95.0" text="CGPA" />
+      <TextField fx:id="cgpaTextfield" layoutX="361.0" layoutY="38.0" prefHeight="25.0" prefWidth="113.0" />
+      <Label layoutX="266.0" layoutY="72.0" prefHeight="26.0" prefWidth="95.0" text="Gender" />
+      <RadioButton fx:id="maleRadioButton" layoutX="361.0" layoutY="77.0" mnemonicParsing="false" text="Male" />
+      <RadioButton fx:id="femaleRadioButton" layoutX="426.0" layoutY="77.0" mnemonicParsing="false" text="Female" />
+      <Label layoutX="34.0" layoutY="108.0" prefHeight="26.0" prefWidth="95.0" text="Major" />
+      <ComboBox fx:id="majorCombobox" layoutX="129.0" layoutY="109.0" prefHeight="25.0" prefWidth="113.0" />
+      <Label layoutX="266.0" layoutY="109.0" prefHeight="26.0" prefWidth="95.0" text="DOB" />
+      <DatePicker fx:id="dobDatepicker" layoutX="361.0" layoutY="110.0" prefHeight="25.0" prefWidth="113.0" />
+      <Label layoutX="34.0" layoutY="154.0" prefHeight="26.0" prefWidth="121.0" text="Programming Skills" />
+      <CheckBox fx:id="pythonCheckbox" layoutX="176.0" layoutY="159.0" mnemonicParsing="false" text="Python" />
+      <CheckBox fx:id="javaCheckbox" layoutX="255.0" layoutY="159.0" mnemonicParsing="false" text="Java" />
+      <CheckBox fx:id="hasScholarshipCheckbox" layoutX="361.0" layoutY="159.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="113.0" text="Has Scholarship?" />
+      <Button layoutX="34.0" layoutY="194.0" mnemonicParsing="false" onAction="#addStudentButtonOnAction" prefHeight="26.0" prefWidth="446.0" text="Add Student" />
+      <Label fx:id="notificationLabel" layoutX="512.0" layoutY="42.0" prefHeight="176.0" prefWidth="196.0" style="-fx-border-color: black;" text="Notification" />
+      <TableView fx:id="studentInfoTableview" layoutX="36.0" layoutY="409.0" prefHeight="167.0" prefWidth="673.0">
+        <columns>
+          <TableColumn fx:id="idTablecolumn" prefWidth="91.0" text="Id" />
+          <TableColumn fx:id="nameTablecolumn" prefWidth="88.0" text="Name" />
+            <TableColumn fx:id="cgpaTablecolumn" prefWidth="71.0" text="CGPA" />
+            <TableColumn fx:id="genderTablecolumn" prefWidth="100.0" text="Gender" />
+            <TableColumn fx:id="majorTablecolumn" prefWidth="91.0" text="Major" />
+            <TableColumn fx:id="skillsTablecolumn" prefWidth="100.0" text="Skills" />
+            <TableColumn fx:id="hasScholarshipTablecolumn" prefWidth="131.0" text="Scholarship" />
+        </columns>
+      </TableView>
+      <Label layoutX="35.0" layoutY="241.0" text="Filter 1" />
+      <Label layoutX="367.0" layoutY="241.0" text="Filter 2" />
+      <Line endX="573.0" layoutX="135.0" layoutY="231.0" startX="-100.0" />
+      <Line endX="74.0" endY="-66.5" layoutX="277.0" layoutY="298.0" startX="74.0" startY="40.5" />
+      <Button layoutX="34.0" layoutY="267.0" mnemonicParsing="false" onAction="#showMaleStudentButtonOnAction" prefHeight="25.0" prefWidth="296.0" text="Show Only Male Students" />
+      <Button layoutX="34.0" layoutY="303.0" mnemonicParsing="false" onAction="#showFemaleStudentButtonOnAction" prefHeight="25.0" prefWidth="296.0" text="Show Only Female Students" />
+      <CheckBox fx:id="hasScholarshipFilterCheckbox" layoutX="367.0" layoutY="271.0" mnemonicParsing="false" text="Has Scholarship?" />
+      <Label layoutX="500.0" layoutY="267.0" prefHeight="26.0" prefWidth="104.0" text="Minimum CGPA" />
+      <TextField fx:id="minimumCGPAFilterTextfield" layoutX="594.0" layoutY="267.0" prefHeight="25.0" prefWidth="113.0" />
+      <Button layoutX="367.0" layoutY="303.0" mnemonicParsing="false" onAction="#scholarshipAndCgpaApplyFilterOnAction" prefHeight="25.0" prefWidth="341.0" text="Apply Filter" />
+      <Button layoutX="35.0" layoutY="357.0" mnemonicParsing="false" onAction="#showAllButtonOnAction" prefHeight="25.0" prefWidth="296.0" text="Show All" />
+      <Button layoutX="370.0" layoutY="357.0" mnemonicParsing="false" onAction="#clearAllButtonOnAction" prefHeight="25.0" prefWidth="341.0" text="Clear All" />
+      <Button layoutX="36.0" layoutY="592.0" mnemonicParsing="false" onAction="#showAverageCGPAButtonOnAction" prefHeight="25.0" prefWidth="296.0" text="Show Average CGPA" />
+      <Button layoutX="38.0" layoutY="633.0" mnemonicParsing="false" onAction="#showSeniorStudentButtonOnAction" prefHeight="25.0" prefWidth="296.0" text="Show Student Info of the Most Senior Student" />
+      <TextArea fx:id="summaryResultTextarea" layoutX="367.0" layoutY="593.0" prefHeight="65.0" prefWidth="341.0" />
+      <Line endX="573.0" layoutX="136.0" layoutY="339.0" startX="-100.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="402.0" prefWidth="290.0" spacing="20.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/23.0.1" fx:controller="com.oop.sectionsix.demo1.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <Button onAction="#onHelloButtonClick" prefHeight="39.0" prefWidth="180.0" style="-fx-background-color: yellow;" text="This is our button" textFill="#da1c1c">
+      <font>
+         <Font name="Book Antiqua" size="16.0" />
+      </font></Button>
+
+    <Label fx:id="hiddenLabel" prefHeight="52.0" prefWidth="159.0" text="This is our hidden label" />
+</VBox>

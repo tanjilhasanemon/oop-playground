@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="441.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.oop.sectionsix.complexnooperation1.ComplexNoController">
+   <children>
+      <Label layoutX="58.0" layoutY="70.0" prefHeight="39.0" prefWidth="212.0" text="Enter real value of 1st complex no" />
+      <TextField fx:id="realOf1stNumberTextfield" layoutX="279.0" layoutY="77.0" prefHeight="25.0" prefWidth="205.0" />
+      <Label layoutX="57.0" layoutY="109.0" prefHeight="39.0" prefWidth="212.0" text="Enter img value of 1st complex no" />
+      <TextField fx:id="imgOf1stNumberTextfield" layoutX="278.0" layoutY="116.0" prefHeight="25.0" prefWidth="205.0" />
+      <Label layoutX="56.0" layoutY="169.0" prefHeight="39.0" prefWidth="212.0" text="Enter real value of 2nd complex no" />
+      <TextField fx:id="realOf2ndNumberTextfield" layoutX="277.0" layoutY="176.0" prefHeight="25.0" prefWidth="205.0" />
+      <Label layoutX="57.0" layoutY="207.0" prefHeight="39.0" prefWidth="212.0" text="Enter img value of 2nd complex no" />
+      <TextField fx:id="imgOf2ndNumberTextfield" layoutX="279.0" layoutY="214.0" prefHeight="25.0" prefWidth="205.0" />
+      <Button layoutX="56.0" layoutY="288.0" mnemonicParsing="false" onAction="#addButtonOnAction" prefHeight="25.0" prefWidth="224.0" text="Add" />
+      <Button layoutX="306.0" layoutY="288.0" mnemonicParsing="false" onAction="#subButtonOnAction" prefHeight="25.0" prefWidth="224.0" text="Sub" />
+      <Label fx:id="resultLabel" layoutX="56.0" layoutY="331.0" prefHeight="45.0" prefWidth="477.0" style="-fx-background-color: yellow;" />
+   </children>
+</AnchorPane>
